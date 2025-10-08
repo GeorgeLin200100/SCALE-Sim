@@ -47,6 +47,9 @@ class dram_latency():
             if count > iterate:
                 print("Iteration {} of {}".format(count,df.shape[0]))
                 iterate+=100000
+
+            if count >= endIndex:
+                break
 #            k=count
 #            for i in range(count,count+self.bw):
 #                a= df[2][k]
